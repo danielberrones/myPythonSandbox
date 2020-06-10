@@ -14,7 +14,7 @@ class Student:
 
 
 def main():
-    aStudent = Student("Mark Williams",33,39)
+    aStudent = Student("Mark Williams",33,89)
     print(aStudent.getName())
     print(aStudent.getQualityHours())
     print(aStudent.getQualityPoints())
