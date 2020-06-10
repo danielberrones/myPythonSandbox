@@ -19,13 +19,13 @@ def main():
 
     # student A
     print(f"Student's Name: {aStudent.getName()}")
-    print(aStudent.getQualityHours())
+    print(f"Quality Points:{aStudent.getQualityHours()}")
     print(aStudent.getQualityPoints())
     print(aStudent.gpa())
     
     # student B
     print(f"Student's Name: {bStudent.getName()}")
-    print(bStudent.getQualityHours())
+    print(f"Quality Points:{bStudent.getQualityHours()}")
     print(bStudent.getQualityPoints())
     print(bStudent.gpa())
 
