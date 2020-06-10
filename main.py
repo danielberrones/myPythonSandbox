@@ -24,7 +24,7 @@ def main():
     print(aStudent.gpa())
     
     # student B
-    print(bStudent.getName())
+    print(f"Student's Name: {bStudent.getName()}")
     print(bStudent.getQualityHours())
     print(bStudent.getQualityPoints())
     print(bStudent.gpa())
