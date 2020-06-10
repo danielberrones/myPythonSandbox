@@ -17,16 +17,16 @@ def main():
     aStudent = Student("Mark Williams",33,89)
     bStudent = Student("Jeb Doe",66,150)
 
+    # student A
     print(aStudent.getName())
-    print(bStudent.getName())
-
     print(aStudent.getQualityHours())
-    print(bStudent.getQualityHours())
-
     print(aStudent.getQualityPoints())
-    print(bStudent.getQualityPoints())
-
     print(aStudent.gpa())
+    
+    # student B
+    print(bStudent.getName())
+    print(bStudent.getQualityHours())
+    print(bStudent.getQualityPoints())
     print(bStudent.gpa())
 
 
