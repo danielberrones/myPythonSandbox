@@ -18,7 +18,7 @@ def main():
     bStudent = Student("Jeb Doe",66,150)
 
     # student A
-    print(aStudent.getName())
+    print(f"Student's Name: {aStudent.getName()}")
     print(aStudent.getQualityHours())
     print(aStudent.getQualityPoints())
     print(aStudent.gpa())
