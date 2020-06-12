@@ -10,3 +10,9 @@ pTags = [i.getText() for i in soup.find_all("p")]
 
 for i in pTags:
     print(i)
+
+with open("deleteMe.txt","w") as f:
+    for i in pTags:
+        f.write(str(i))
+
+        
