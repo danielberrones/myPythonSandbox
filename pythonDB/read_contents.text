@@ -1,0 +1,20 @@
+from sys import argv
+script, filename = argv
+
+f = open(filename,'r')
+data = f.read()
+print('\n\n************************************************')
+print(f'\tFILENAME----> {filename}')
+print()
+print('\n\tHERE IS DATA IN FILE: ')
+print('************************************************')
+
+print()
+print()
+print(data)
+a = len(data)
+print()
+print('************************************************')
+print('*********  The length is: {}'.format(a)+'   ****************')
+print('************************************************')
+print()

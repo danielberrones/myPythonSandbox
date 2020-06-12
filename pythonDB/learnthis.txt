@@ -1,0 +1,22 @@
+praw
+praw is a reddit api python wrapper
+we create a reddit object and can say, for x in object.subreddit('name').hot/new(
+
+
+spotipy, access token, auth2, importing modules
+
+requests
+
+
+class
+try, except, finally
+tkinter frame, button, label, grid, geometry, window
+basic php
+basic cmd windows
+twitter api
+wordpress, create page
+css3 dropdown
+c++ basic
+BASIC basics
+FORTRAN basics
+passive income, online business

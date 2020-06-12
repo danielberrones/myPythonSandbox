@@ -1,0 +1,36 @@
+3 tables
+===
+
+1. financial_aid
+2. grades
+3. scholarships (if any)
+
+====
+
+Student: John Jones
+Student ID: X988
+SSN: 782-21-3535
+DOB: 2/09/1990
+
+====
+
+select name
+	,aid_status
+	,current_grades_all
+	,scholarship_status
+from financial_aid as t1
+inner join
+grades as t2
+	on t1.aid_id = t2.student_id
+inner join
+scholarships as t3
+	on t2.student_id = t3.scholar_id
+where student_id = 'X988'
+	or SSN = '782-21-3535'
+order by semester;
+
+
+
+
+
+	
