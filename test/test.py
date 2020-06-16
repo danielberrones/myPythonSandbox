@@ -1,7 +1,15 @@
-import matplotlib.pyplot as plt
+import requests
+from bs4 import BeautifulSoup
 
-myLabels = ("PHP","WordPress","JavaScript","Python","HTML/CSS")
-totals = [50,50,50,10,30]
+url = 'https://scrapethissite.com/pages/simple/'
 
-plt.pie(totals, labels=myLabels)
-plt.show()
+# TODO: store country and capitals into array, save to file
+
+
+r = requests.get(url)
+
+soup = BeautifulSoup(r.text,'lxml')
+myHTML = soup.html
+
+with open('scrapeThisSite.html','w') as f:
+    f.write(str(myHTML))
