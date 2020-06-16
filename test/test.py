@@ -15,6 +15,6 @@ soup = BeautifulSoup(r.text,'lxml')
 #     f.write(str(myHTML))
 
 countryNames = [soup.find_all("h3", class_="country-name")]
-strippedNames = [i.get_text() for i in countryNames]
-print(countryNames)
-# print(strippedNames)
+# strippedNames = [i.get_text() for i in countryNames]
+
+splitText = []
