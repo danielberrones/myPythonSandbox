@@ -9,7 +9,12 @@ url = 'https://scrapethissite.com/pages/simple/'
 r = requests.get(url)
 
 soup = BeautifulSoup(r.text,'lxml')
-myHTML = soup.html
+# myHTML = soup.html
 
-with open('scrapeThisSite.html','w') as f:
-    f.write(str(myHTML))
+# with open('scrapeThisSite.html','w') as f:
+#     f.write(str(myHTML))
+
+countryNames = [soup.find_all("div", class_="col-md-4 country")]
+# strippedNames = [i.get_text() for i in countryNames]
+print(countryNames)
+# print(strippedNames)
