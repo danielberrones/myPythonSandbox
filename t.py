@@ -16,15 +16,14 @@ def n():
 
 n()
 
-# re
-# pattern = "...a$"
-# testString = "casa"
-# testString1 = "taza"
+pattern = "...a$"
+testString = "casa"
+testString1 = "taza"
 
-# outcome = re.match(pattern,testString)
-# outcome1 = re.match(pattern,testString1)
-# print(outcome)
-# print(outcome1)
+outcome = re.match(pattern,testString)
+outcome1 = re.match(pattern,testString1)
+print(outcome)
+print(outcome1)
 
 r = requests.get('https://api.github.com/events')
 
