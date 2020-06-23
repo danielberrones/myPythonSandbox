@@ -14,7 +14,14 @@ soup = BeautifulSoup(r.text,'lxml')
 # with open('scrapeThisSite.html','w') as f:
 #     f.write(str(myHTML))
 
+# countryNames = [soup.find_all("div", class_="country")]
 countryNames = [soup.find_all("h3", class_="country-name")]
-# strippedNames = [i.get_text() for i in countryNames]
+# strippedNames = for i in countryNames]
+# print(countryNames[0])
+print(countryNames)
 
-splitText = []
+
+# MYsplitText = countryNames.split(", ")
+# print(MYsplitText)
+
+print(len(MYsplitText))
