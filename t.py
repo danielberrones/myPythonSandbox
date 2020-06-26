@@ -3,7 +3,8 @@ states = {
     'Florida': 'FL',
     'California': 'CA',
     'New York': 'NY',
-    'Michigan': 'MI'}
+    'Michigan': 'MI'
+}
 
 states['Georgia'] = 'GA'
 states['New Jersey'] = 'NJ'
@@ -15,16 +16,8 @@ cities = {
     'MI': 'Detroit'
 }
 
-
-
-
-
-
-
-
-
-
-
+state = states.get("Georgia")
+print(state)
 
 
 # print("California has " + cities['CA'])
