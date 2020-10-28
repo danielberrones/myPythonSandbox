@@ -1,38 +1,17 @@
-states = {
-    'Oregon': 'OR',
-    'Florida': 'FL',
-    'California': 'CA',
-    'New York': 'NY',
-    'Michigan': 'MI'
-}
-
-states['Georgia'] = 'GA'
-states['New Jersey'] = 'NJ'
-
-cities = {
-    'CA': 'San Francisco',
-    'GA': 'Atlanta',
-    'NJ': 'Newark',
-    'MI': 'Detroit'
-}
-
-state = states.get("Georgia")
-print(state)
+def main():
+        filename = input("Enter the name of the file: ")
+        print("Enter rows of text. Quit by entering an empty row.")
+        counter = 1
+        with open(filename, "w") as f:
+                while True:
+                        text_line = input()
+                        f.write(str(counter) + " " + text_line+"\n")
+                        if text_line == "":
+                                break
+                        counter += 1
 
 
-# print("California has " + cities['CA'])
-# print('New Jersey\'s abbrev. is ' + states['New Jersey'])
-# print('Michigan has: ' + cities[states['Michigan']])
-# print('Michigan has: ' + cities[states['Michigan']])
-for state, abbrev in states.items():
-    print(f"{state} is abbreviated {abbrev}")
+        print(f"File {filename} has been written.")
 
-print("\n-" * 5 + "\n")
-
-for state, abbrev in cities.items():
-    print(f"{state} has the city {abbrev}")
-# def returnKeysValues():
-#     for i,(k,v) in enumerate(states.items()):
-#         print(i+1,k,v)
-
-# returnKeysValues()
+if __name__ == "__main__":
+    main()
