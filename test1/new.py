@@ -23,7 +23,7 @@ for i in newArr:
 
 with open("writeMe.txt","w") as f:
     for i in final:
-        f.write(i)
+        f.write(i+"\n")
 # print(final)
 # str = arr[0].getText()
 # str = str[2:]
